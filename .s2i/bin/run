@@ -45,7 +45,7 @@ fi
 envsubst < /opt/app-root/etc/conf.d/50-mpm-tuning.conf.template > /opt/app-root/etc/conf.d/50-mpm-tuning.conf
 envsubst < /opt/app-root/etc/conf.d/00-documentroot.conf.template > /opt/app-root/etc/conf.d/00-documentroot.conf
 
-mv /opt/app-root/src /opt/app-root/src.bak
-ln -s /app-files /opt/app-root/src
+#mv /opt/app-root/src /opt/app-root/src.bak
+#ln -s /app-files /opt/app-root/src
 
 exec httpd -D FOREGROUND
